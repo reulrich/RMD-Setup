@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+// import the custom extended parts
+@import "custom_code/custom";
+
+// import the custom extended addons
+@import "custom_code/addon_bg-color-gradient";
+@import "custom_code/addon_duotone";
+// @import "custom_code/addon_mediaqueries";
+@import "custom_code/addon_spacing";
+
+// import the custom extended components
+@import "custom_code/component_card";
+@import "custom_code/component_navbar";

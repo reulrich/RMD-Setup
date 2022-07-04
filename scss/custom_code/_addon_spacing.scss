@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+// additional custom code for spacing
+
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  // Extended Values
+  6: $spacer * 6,
+  7: $spacer * 7,
+  8: $spacer * 8,
+  9: $spacer * 9,
+  10: $spacer * 10,
+  11: $spacer * 11,
+  12: $spacer * 12,
+  13: $spacer * 13,
+  14: $spacer * 14,
+  15: $spacer * 15,
+
+  100: $spacer * 1,
+  125: $spacer * 1.25,
+  150: $spacer * 1.5,
+  175: $spacer * 1.75,
+
+  200: $spacer * 2,
+  225: $spacer * 2.25,
+  250: $spacer * 2.5,
+  275: $spacer * 2.75,
+
+  300: $spacer * 3,
+  325: $spacer * 3.25,
+  350: $spacer * 3.5,
+  375: $spacer * 3.75,
+
+  400: $spacer * 4,
+  425: $spacer * 4.25,
+  450: $spacer * 4.5,
+  475: $spacer * 4.75,
+
+  500: $spacer * 5,
+  525: $spacer * 5.25,
+  550: $spacer * 5.5,
+  575: $spacer * 5.75,
+
+  600: $spacer * 6,
+  625: $spacer * 6.25,
+  650: $spacer * 6.5,
+  675: $spacer * 6.75,
+
+  700: $spacer * 7,
+  725: $spacer * 7.25,
+  750: $spacer * 7.5,
+  775: $spacer * 7.75,
+
+  800: $spacer * 8,
+  825: $spacer * 8.25,
+  850: $spacer * 8.5,
+  875: $spacer * 8.75,
+
+  900: $spacer * 9,
+  925: $spacer * 9.25,
+  950: $spacer * 9.5,
+  975: $spacer * 9.75,
+
+  1000: $spacer * 10,
+  1100: $spacer * 11,
+  1200: $spacer * 12,
+  1300: $spacer * 13,
+  1400: $spacer * 14,
+  1500: $spacer * 15,
+  1600: $spacer * 16,
+  1700: $spacer * 17,
+  1800: $spacer * 18,
+  1900: $spacer * 19,
+
+  2000: $spacer * 20,
+
+  );

@@ -1,0 +1,60 @@
+/*
+    Theme Name: RuMeDe Alpha Template
+    Theme URI: 
+    Author: Reto Ulrich
+    Author URI: https://rumede.ch
+    Description: Full Size Editing-Template, Customized Theme based on Bootstrap V5
+    Version: 1.0
+    License: GNU General Public License v2 or later
+    License URI: http:((www.gnu.org/licenses/gpl-2.0.html
+*/
+
+
+
+// Global variables
+
+:root {
+    --name: value;
+}
+
+
+
+// X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Include any default variable overrides (though functions won't be available)
+@import "custom_variables";
+
+
+// Small devices (landscape phones, 576px and up - .sm)
+@media (min-width: 576px) { 
+
+}
+
+// Medium devices (tablets, 768px and up - .md)
+@media (min-width: 768px) { 
+
+}
+
+// Large devices (desktops, 992px and up - .lg)
+@media (min-width: 992px) { 
+
+}
+
+// X-Large devices (large desktops, 1200px and up - .xl)
+@media (min-width: 1200px) { 
+  
+}
+
+// XX-Large devices (larger desktops, 1400px and up - .xxl)
+@media (min-width: 1400px) { 
+  
+}
+
+
+
+// Include the bootstrap default
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Add additional custom code
+@import "custom_extended-parts";

@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+// additional custom code for background color gradient
+
+  $overallColors: map-merge($theme-colors, $colors);
+  
+  @each $colorName,
+  $colorValue in $overallColors {
+    @for $i from 1 through 100 {
+        @if $i % 5==0 {
+            $percentage: $i*1%;
+  
+            .bg-#{$colorName}.bg-darken-#{$i} {
+                background-color: mix(black, $colorValue, $percentage) !important;
+            }
+  
+            .bg-#{$colorName}.bg-lighten-#{$i} {
+                background-color: mix(white, $colorValue, $percentage) !important;
+            }
+        }
+    }
+  }
+  
+  @each $colorName,
+  $colorValue in $colors {
+  
+    .bg-#{$colorName} {
+        background-color: $colorValue !important;
+    }
+    .border-#{$colorName} {
+        border-color: $colorValue !important;
+    }
+    .text-#{$colorName} {
+        color: $colorValue !important;
+    }
+  }

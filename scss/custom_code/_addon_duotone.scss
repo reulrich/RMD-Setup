@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+// import the duotone
+
+// Duotone
+  
+  /* CSS variables. Not needed for the effect to work. */
+  :root {
+    --base:              #fcc000;
+    --bg-blend:          multiply;
+    --blur:              0px;
+    --fg-blend:          lighten;
+    --foreground:        #000000;
+    --opacity:           1;
+    --spacing:           0;
+  }
+  .img-duotone {
+    background-color:    var(--base);
+    display:             flex;
+    flex:                1 1 100%;
+    height:              100%;
+    overflow:            hidden;
+    padding:             var(--spacing);
+    position:            relative;
+    z-index: 0;
+  }
+  
+  .img-duotone img {
+    filter:              grayscale(100%) contrast(1) blur(var(--blur));
+    flex:                1 0 100%;
+    height:              100%;
+    max-width:           100%;
+    mix-blend-mode:      var(--bg-blend);
+    object-fit:          cover;
+    opacity:             var(--opacity);
+    position:            relative;
+    width:               100%;
+  }
+  
+  .img-duotone::before {
+    background-color:    var(--foreground);
+    bottom:              0;
+    content:             '';
+    height:              100%;
+    left:                0;
+    mix-blend-mode:      var(--fg-blend);
+    position:            absolute;
+    right:               0;
+    top:                 0;
+    width:               100%;
+    z-index:             1;
+  }

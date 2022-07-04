@@ -1,0 +1,147 @@
+@charset "UTF-8";
+
+// X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+
+// GLOBAL
+
+// Grid
+$grid-gutter-width: 3.0rem;   // 1.5rem !default;
+
+// Container
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1152px,   // 1140px,
+  // xxl: 1320px
+) !default;
+
+// Container padding
+$container-padding-x: $grid-gutter-width !default;
+
+// Color system
+$white:    #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black:    #000 !default;
+
+// Theme Colors
+$primary: #fcc008; // #0179ae;
+$secondary: #004e7d; // #fece00;
+$tertiary: #b62f20;// #FAC31B;
+$success: #8dc63f;
+$info: #01bce4;
+$warning: #fcad29;
+$danger: #ce161f;
+$light: #dce1e3;
+$dark: #5c5f58;
+
+// Theme Colors Map
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "tertiary":   $tertiary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark
+) !default;
+
+// Body
+$body-color: black;   // $gray-900 !default;
+
+// Link
+$link-decoration: none;   // underline !default;
+$link-shade-percentage: 50%;   // 20% !default;
+
+// Typography
+$font-family-sans-serif: 'Roboto', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";   // system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$paragraph-margin-bottom: 3rem;   // 1rem !default;
+$font-size-base: 1.25rem;   // 1rem !default; // Assumes the browser default, typically `16px`
+$font-size-sm: 0.75rem;   // $font-size-base * .875 !default;
+$font-size-lg: 2.5rem;   // $font-size-base * 1.25 !default;
+$small-font-size: 1rem;   // .875em !default;
+$line-height-sm: 1.2;   // 1.25 !default;
+$line-height-base: 1.5;   // 1.5 !default;
+$line-height-lg: 1.8;   // 2 !default;
+$font-weight-normal: 400;   // 400 !default;
+$headings-font-family:  'Roboto Slab', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";   // null !default;
+$h1-font-size: $font-size-base * 3.0;   // $font-size-base * 2.5 !default;
+$h2-font-size: $font-size-base * 2.5;   // $font-size-base * 2 !default;
+$h3-font-size: $font-size-base * 1.5;   // $font-size-base * 1.75 !default;
+$h4-font-size: $font-size-base * 1.25;   // $font-size-base * 1.5 !default;
+$h5-font-size: $font-size-base;   // $font-size-base * 1.25 !default;
+$h6-font-size: $font-size-base * .75;   // $font-size-base !default;
+$headings-margin-bottom: 0;   // $spacer * .5 !default;
+
+// Headings
+$headings-font-weight: 400;   // 500 !default;
+$headings-margin-bottom:  3rem;   // $spacer * .5 !default;
+
+// Display
+$display-font-weight: 400;   // 300 !default;
+
+// Lead
+$lead-font-size: $font-size-base * 1.375;   // $font-size-base * 1.25 !default;
+$lead-font-weight: 400;   // 300 !default;
+
+
+// COMPONENTS
+
+// Navbar
+$navbar-nav-link-padding-x: 1.0rem; // .5rem !default;
+$navbar-padding-y: 0;   // $spacer * .5 !default;
+$navbar-brand-font-size: $font-size-base;   // $font-size-lg !default;
+$navbar-brand-padding-y: 0;   // ($nav-link-height - $navbar-brand-height) * .5 !default;
+$navbar-dark-color: rgba($white, 1);   // rgba($white, .55) !default;
+$navbar-dark-hover-color: rgba($black, 1);   // rgba($white, .75) !default;
+$navbar-dark-active-color: rgba($black, 1);   // $white !default;
+$navbar-light-color: rgba($black, .25);   // rgba($black, .55) !default;
+$navbar-light-hover-color: rgba($black, 1);   // rgba($black, .7) !default;
+$navbar-light-active-color: rgba($black, 1);   // rgba($black, .9) !default;
+
+
+
+// Small devices (landscape phones, 576px and up - .sm)
+@media (min-width: 576px) { 
+  
+}
+
+
+
+// Medium devices (tablets, 768px and up - .md)
+@media (min-width: 768px) { 
+
+}
+
+
+
+// Large devices (desktops, 992px and up - .lg)
+@media (min-width: 992px) { 
+
+}
+
+
+
+// X-Large devices (large desktops, 1200px and up - .xl)
+@media (min-width: 1200px) { 
+  
+}
+
+
+
+// XX-Large devices (larger desktops, 1400px and up - .xxl)
+@media (min-width: 1400px) { 
+  
+}

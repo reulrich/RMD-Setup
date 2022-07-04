@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+
+// customizing for card
+
+.card a img {
+    -webkit-transition: 0.1s linear;
+    transition: 0.1s linear;
+    }
+    
+    .card a img:hover {
+    -webkit-transform: scale(1.10);
+    transform: scale(1.10);
+    }

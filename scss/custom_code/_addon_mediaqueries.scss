@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+// additional custom code for mediaquerries label
+
+// Mit freundlicher Unterstützung von Peter Schütz, PSC Informatik, Bern.
+
+body:after {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 10000;
+  display: block;
+  padding: 0.25rem 0.5rem;
+  font-size: 1rem;
+  line-height: 1.2; }
+
+body:after {
+  color: #FD0100;
+  content: 'portrait phones | "xs"';
+  background-color: #ffc0bf; }
+
+#map {
+  display: none;
+  visibility: collapse; }
+
+@media (min-width: 576px) and (max-width: 767px) {
+  body:after {
+    color: #F76915;
+    content: 'landscape phones | "sm"';
+    background-color: #fddac5; } }
+@media (min-width: 768px) and (max-width: 991px) {
+  body:after {
+    color: #EEDE04;
+    content: 'tablets | "md"';
+    background-color: #fbf7c0; } }
+@media (min-width: 992px) and (max-width: 1199px) {
+  body:after {
+    color: #A0D636;
+    content: 'desktops | "lg"';
+    background-color: #e7f5cd; } }
+@media (min-width: 1200px) and (max-width: 1399px) {
+  body:after {
+    color: #2FA236;
+    content: 'large desktops | "xl"';
+    background-color: #cbe8cd; } }
+@media (min-width: 1400px) {
+  body:after {
+    color: #333ED4;
+    content: 'larger desktops | "xxl"';
+    background-color: #cccff4; } }
